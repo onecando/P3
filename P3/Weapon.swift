@@ -8,9 +8,12 @@
 
 import Foundation
 
-
-enum Weapon: Double {
-    case sword = 80
-    case hammer = 60
-    case staff = 70
+class Weapon {
+    init(name: String, attackBonus: Int) {
+        self.name = name
+        self.attackBonus = attackBonus
+    }
+    
+    let name: String
+    let attackBonus: Int
 }

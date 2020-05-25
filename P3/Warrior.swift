@@ -13,19 +13,21 @@ class Warrior {
     
     // MARK: Inits
     
-    init(lifePoints: Double, attackPoints: Double, name: String) {
+    init(lifePoints: Int, attackPoints: Int, name: String, weapon: Weapon) {
         self.lifePoints = lifePoints
         self.attackPoints = attackPoints
         self.name = name
+        self.waeapon = weapon
     }
     
-    // MARK: Propreties
+    // MARK: Properties
     
-    let name: String
-    var lifePoints: Double
-    var attackPoints: Double
+    private let name: String
+    private var lifePoints: Int
+    private var attackPoints: Int
+    private var waeapon: Weapon
     
-
+    
     
     // MARK: Methods
     
@@ -37,8 +39,8 @@ class Warrior {
         
     }
     
-    func attack(oppositeCharacter: Warrior) {
-        print("Attack \(oppositeCharacter.name) with \(lifePoints) lifepoints and \(attackPoints) attackpoints")
+    func attack(oppositeWarrior: Warrior) {
+        print("Attack \(oppositeWarrior.name) with \(lifePoints) lifepoints and \(attackPoints) attackpoints")
     }
     
 }

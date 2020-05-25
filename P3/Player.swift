@@ -20,22 +20,22 @@ class Player {
     
     var warriors: [Warrior]
     
-    let numberOfWarriorPerTeam = 3
+    private let numberOfWarriorPerTeam = 3
     
     
     func createWarriors() {
         for warriorIndex in 1...numberOfWarriorPerTeam {
-            createWarrior(warriorIndex: warriorIndex)
+            createSingleWarrior(warriorIndex: warriorIndex)
         }
     }
     
     func describeWarriors() {
-           for warrior in warriors {
-               warrior.present()
-           }
-       }
+        for warrior in warriors {
+            warrior.present()
+        }
+    }
     
-    private func createWarrior(warriorIndex: Int) {
+    private func createSingleWarrior(warriorIndex: Int) {
         print("warrior \(warriorIndex) will be created now")
         let warriorName = askWarriorName()
         let warrior = Warrior(lifePoints: 50, attackPoints: 30, name: warriorName)
@@ -50,8 +50,8 @@ class Player {
         }
         return ""
     }
-
     
-   
+    
+    
     
 }
