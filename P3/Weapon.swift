@@ -16,4 +16,7 @@ class Weapon {
     
     let name: String
     let attackBonus: Int
+    
+    
+    //let choiceOfWeapons = ["Hammer", "Sword", "Magic"]
 }

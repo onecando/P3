@@ -11,13 +11,14 @@ import Foundation
 class GameManager {
     init() {
         print("Initialize game manager")
+        players = [
+            Player(id: 1),
+            Player(id: 2)
+        ]
+        
     }
     
-    private let players: [Player] = [
-        Player(id: 1),
-        Player(id: 2)
-    ]
-    
+    private let players: [Player]
     
     
     func startGameProcess() {

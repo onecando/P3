@@ -38,7 +38,7 @@ class Player {
     private func createSingleWarrior(warriorIndex: Int) {
         print("warrior \(warriorIndex) will be created now")
         let warriorName = askWarriorName()
-        let warrior = Warrior(lifePoints: 50, attackPoints: 30, name: warriorName)
+        let warrior = Warrior(lifePoints: 50, attackPoints: 30, name: warriorName, weapon: Weapon(name: "sword test", attackBonus: 10))
         warriors.append(warrior)
     }
     

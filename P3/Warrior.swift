@@ -17,7 +17,7 @@ class Warrior {
         self.lifePoints = lifePoints
         self.attackPoints = attackPoints
         self.name = name
-        self.waeapon = weapon
+        self.weapon = weapon
     }
     
     // MARK: Properties
@@ -25,7 +25,7 @@ class Warrior {
     private let name: String
     private var lifePoints: Int
     private var attackPoints: Int
-    private var waeapon: Weapon
+    private var weapon: Weapon
     
     
     
